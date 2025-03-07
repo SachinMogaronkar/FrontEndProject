@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Indian Heritage Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Homepage Section -->
+    <div class="homepage">
+      <video id="background-video" autoplay loop muted>
+        <source src="./videos/videoplayback.mp4" type="video/mp4" />
+      </video>
+      <!-- Nav Bar Section Starts -->
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./images/india-logo.png" alt="India Logo" />
+        </div>
+        <div id="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search your destiny"
+          />
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+        
+        <div class="nav-links">
+          <button class="home-btn">Home</button>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Explore
+              <i class="fa-solid fa-circle-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Culture</a>
+              <a href="#">History</a>
+              <a href="#">Heritage</a>
+              <a href="#">Technology</a>
+              <a href="#">Sports</a>
+              <a href="#">Space</a>
+              <a href="#">Development</a>
+              <a href="#">Tourism</a>
+            </div>
+          </div>
+          <i class="fa-solid fa-user-circle" id="user-icon"></i>
+        </div>
+      </nav>
+
+      <!-- Nav Bar Section Ends -->
+
+      <!-- Home Page Content Section Starts -->
+       <!-- Carousel Section Starts -->
+       <div class="carousel">
+        <!-- Description Section Starts -->
+      <div id="description" class="description">
+        <p><strong class="place-name">Kedarnath</strong>:Kedarnath is one of the holiest places in India, located in the Indian state of Uttarakhand. It is famous for the Kedarnath Temple, dedicated to Lord Shiva, which attracts thousands of pilgrims every year. The temple is situated amidst the snow-capped peaks of the Himalayas.</p>
+      </div>
+      <!-- Description Section Ends -->
+        <div class="card active">
+          <img src="./images/Kedarnath.jpg" alt="Heritage Image 1">
+        </div>
+        <div class="card">
+          <img src="./images/Kashi.jpg" alt="Heritage Image 2">
+        </div>
+        <div class="card">
+          <img src="./images/Ayodhya.jpg" alt="Heritage Image 3">
+        </div>
+        <div class="carousel-buttons">
+          <button onclick="prevSlide()">&#10094;</button>
+          <button onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+      <!-- Carousel Section Ends -->
+
+      
+       <!-- Home Page Content Section Ends -->
+    </div>
+    <!-- Home Page Section Ends -->
+  </body>
+</html>
